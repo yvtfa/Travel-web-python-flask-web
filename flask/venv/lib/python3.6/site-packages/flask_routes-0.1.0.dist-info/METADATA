@@ -1,0 +1,43 @@
+Metadata-Version: 2.0
+Name: flask-routes
+Version: 0.1.0
+Summary: Command line extension to list all routes in a Flask project
+Home-page: https://github.com/timster/flask-routes
+Author: Tim Shaffer
+Author-email: timshaffer@me.com
+License: MIT
+Keywords: flask routes routing api documentation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database :: Front-Ends
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+
+flask-routes
+############
+
+A simple command line extension for listing routes in a Flask project.
+
+Installation
+============
+
+This package can be installed using pip:
+
+::
+
+    pip install flask-routes
+
+
+Usage
+=====
+
+::
+
+    export FLASK_APP=module.app
+
+    flask routes
+
+

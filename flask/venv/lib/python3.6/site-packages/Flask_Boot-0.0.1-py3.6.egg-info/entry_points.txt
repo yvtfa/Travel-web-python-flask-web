@@ -1,0 +1,3 @@
+[console_scripts]
+flask_boot = flask_boot.flask_cli:main
+

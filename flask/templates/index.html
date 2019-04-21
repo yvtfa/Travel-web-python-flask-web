@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+{% set name='baz' %}
+    <h2>Travel</h2>
+    <li><a href="{{ url_for('watchlist') }}">旅游计划地点</a></li>
+    <li><a href="{{ url_for('watchlist_with_static') }}">旅游地点景点介绍超链接</a></li>
+    <li><a href="{{ url_for('where') }}">旅游地点投票</a></li>
+    <li><a href="{{ url_for('answer')}}">投票结果图</a></li>
+    <li><a href="{{ url_for('just_flash') }}">旅行小贴士</a></li>
+</ul>
+    <footer>
+    {% block footer %}
+        <small>
+            <a href="https://github.com/yvtfa/Travel-web-python-flask-web" title="Fork me on GitHub">GitHub</a> /
+            <a>flask项目实战--方宇涛</a>
+        </small>
+    {% endblock %}
+</footer>
+{% endblock %}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>旅游地点投票</title>
+</head>
+ <body>
+	<div  align="center">
+	<h4>旅游地点投票（单选最想去之地）</h4>
+		<table id="main" >
+			<tr >
+				<td>
+					<input type="radio" name="option" checked="checked"/>香港澳门
+				</td>
+			</tr>
+			<tr>
+				<td style="width:550px">
+					<div id=0 style="background-color:#acd6ff; width:0; height:20px; border-width:0px;">
+					</div>
+				</td>
+				<td>
+					<label id="label0">0</label>票
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" name="option"  />广州
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<div id=1 style="background-color:#0066cc; height:20px; width:0; border-width:0px; border-color:blue; border-style:solid ; text-align:right;" ></div>
+
+				</td>
+				<td>
+				<label id="label1">0</label>票
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<input type="radio" name="option"  />北京
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<div id=2 style="background-color:#ff75; height:20px;width:0;  border-width:0px; border-color:blue; border-style:solid ; text-align:right;" ></div>
+
+				</td>
+				<td>
+				<label id="label2">0</label>票
+				</td>
+			</tr>
+            <tr >
+				<td>
+					<input type="radio" name="option"  />上海
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<div id=3 style="background-color:#ff7562; height:20px;width:0;  border-width:0px; border-color:blue; border-style:solid ; text-align:right;" ></div>
+
+				</td>
+				<td>
+				<label id="label3">0</label>票
+				</td>
+			</tr>
+            <tr >
+				<td>
+					<input type="radio" name="option"  />杭州
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<div id=4 style="background-color:#ffc107; height:20px;width:0;  border-width:0px; border-color:blue; border-style:solid ; text-align:right;" ></div>
+
+				</td>
+				<td>
+				<label id="label4">0</label>票
+				</td>
+			</tr>
+            <tr >
+				<td>
+					<input type="radio" name="option"  />新疆
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<div id=5 style="background-color:#ffff66; height:20px;width:0;  border-width:0px; border-color:blue; border-style:solid ; text-align:right;" ></div>
+
+				</td>
+				<td>
+				<label id="label5">0</label>票
+				</td>
+			</tr>
+            <tr >
+				<td>
+					<input type="radio" name="option"  />内蒙古
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<div id=6 style="background-color:#ff7423; height:20px;width:0;  border-width:0px; border-color:blue; border-style:solid ; text-align:right;" ></div>
+
+				</td>
+				<td>
+				<label id="label6">0</label>票
+				</td>
+			</tr>
+            <tr >
+				<td>
+					<input type="radio" name="option"  />云南
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<div id=7 style="background-color:#ffff88; height:20px;width:0;  border-width:0px; border-color:blue; border-style:solid ; text-align:right;" ></div>
+
+				</td>
+				<td>
+				<label id="label7">0</label>票
+				</td>
+			</tr>
+            <tr >
+				<td>
+					<input type="radio" name="option"  />山东
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<div id=8 style="background-color: #f1b0b7; height:20px;width:0;  border-width:0px; border-color:blue; border-style:solid ; text-align:right;" ></div>
+
+				</td>
+				<td>
+				<label id="label8">0</label>票
+				</td>
+			</tr>
+            <tr >
+				<td>
+					<input type="radio" name="option"  />南京
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<div id=9 style="background-color:#533f03; height:20px;width:0;  border-width:0px; border-color:blue; border-style:solid ; text-align:right;" ></div>
+
+				</td>
+				<td>
+				<label id="label9">0</label>票
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" name="option" />其他
+				</td>
+			</tr>
+			<tr >
+				<td>
+					<div id=10 style="background-color:#5cadad;height:20px;width:0; border-width:0px; border-color:blue; border-style:solid ; text-align:right;" ></div>
+
+				</td>
+				<td>
+				<label id="label10">0</label>票
+				</td>
+			</tr>
+
+			<tr>
+				<td><p>
+					<input type="submit" value="确认投票" onclick="vote()"/>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+<script type="text/javascript">
+
+	function vote(){
+
+		for(var i = 0; i < document.getElementsByName("option").length; i++){
+
+			if(document.getElementsByName("option")[i].checked == true){
+				var width = document.getElementById(i).style.width;
+				width = parseInt(width);
+				width += 3;
+				document.getElementById(i).style.width = width+"px";
+
+				var label = "label"+i;
+				var num = document.getElementById(label).innerText;
+				document.getElementById(label).innerText = ++num;
+			}
+		}
+
+	}
+
+</script>
+</html>

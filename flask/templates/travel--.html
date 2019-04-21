@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ user.username }}'s Watchlist Pro{% endblock %}
+
+{% block content %}
+
+    <a href="{{ url_for('index') }}">&larr; Return</a>
+    <h2>
+    <img src="{{ url_for('static', filename='avatar.jpg') }}" width="50"> {{ user.username }}
+</h2>
+{% if user.bio %}
+<i>{{ user.bio }}</i>
+{% else %}
+<i>This user has not provided a bio.</i>
+{% endif %}
+<h3>
+<li><a href="http://www.bytravel.cn/view/index140.html">香港--http://www.bytravel.cn/view/index140.html</a></li>
+<li><a href="http://www.bytravel.cn/view/index141.html">澳门--http://www.bytravel.cn/view/index141.html</a></li>
+<li><a href="http://www.bytravel.cn/view/top10/index204.html">广州--http://www.bytravel.cn/view/top10/index204.html</a></li>
+<li><a href="http://www.bytravel.cn/view/index109.html">北京--http://www.bytravel.cn/view/index109.html</a></li>
+<li><a href="http://www.bytravel.cn/view/index117.html">上海--http://www.bytravel.cn/view/index117.html</a></li>
+<li><a href="http://www.bytravel.cn/view/index208.html">杭州--http://www.bytravel.cn/view/index208.html</a></li>
+<li><a href="http://www.bytravel.cn/view/index139.html">新疆--http://www.bytravel.cn/view/index139.html</a></li>
+<li><a href="http://www.bytravel.cn/view/index113.html">内蒙古--http://www.bytravel.cn/view/index113.html</a></li>
+<li><a href="http://www.bytravel.cn/view/index133.html">云南--http://www.bytravel.cn/view/index133.html</a></li>
+<li><a href="http://www.bytravel.cn/view/index123.html">山东--http://www.bytravel.cn/view/index123.html</a></li>
+<li><a href="http://www.bytravel.cn/view/index238.html">南京--http://www.bytravel.cn/view/index238.html</a></li>
+</h3>
+{% endblock %}
+

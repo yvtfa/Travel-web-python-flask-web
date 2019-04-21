@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: WTForms-Ext
+Version: 0.2
+Summary: Extensions of WTForms
+Home-page: https://github.com/zengqiu/wtforms-ext
+Author: zengqiu
+Author-email: zengqiu@qq.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: WTForms
+
+WTForms-Ext
+===========
+
+Some extensions of WTForms.
+

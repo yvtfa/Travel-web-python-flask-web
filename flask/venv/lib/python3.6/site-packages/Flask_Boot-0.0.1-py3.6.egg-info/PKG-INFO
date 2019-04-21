@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: Flask-Boot
+Version: 0.0.1
+Summary: Flask application generator for boosting your development.
+Home-page: https://github.com/wuxirenshi/flask-boot
+Author: xxd
+Author-email: 369404843@qq.com
+License: MIT
+Description: Flask-Boost
+        ===========
+        
+        Flask application generator for boosting your development.
+        
+        
+        Installation
+        ------------
+        
+        ::
+        
+            pip install flask_boot
+        
+        Development Guide
+        -----------------
+        
+        Init project
+        ~~~~~~~~~~~~
+        
+        ::
+        
+            flask_boot new <your_project_name>
+        
+        Setup backend requirements
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        
+        MIT
+Keywords: flask sample generator
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

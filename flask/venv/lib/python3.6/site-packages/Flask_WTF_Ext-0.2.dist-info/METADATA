@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: Flask-WTF-Ext
+Version: 0.2
+Summary: Extensions of Flask-WTF
+Home-page: https://github.com/zengqiu/flask-wtf-ext
+Author: zengqiu
+Author-email: zengqiu@qq.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: Flask-WTF
+Requires-Dist: WTForms
+Requires-Dist: WTForms-Ext
+
+Flask-WTF-Ext
+=============
+
+Some extensions of Flask-WTF.
+
